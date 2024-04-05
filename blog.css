@@ -357,4 +357,7 @@
     h2{
       font-size: 1.3rem !important;
     }
+    .all_post_group{
+     display: grid;
+    }
   }

@@ -463,6 +463,10 @@
   }
 }
 @media (min-width:350px) and (max-width:600px){
+  .opinions_mini h3{
+    font-size: 20px;
+    margin-bottom: .75rem;
+  }
   h1{
     font-size: 1.5rem !important;
   }

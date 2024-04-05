@@ -584,7 +584,7 @@
 }
 .job_content{
   display: grid;
-  
+  margin-bottom: 1rem;
   grid-template-columns: none;
 }
 .job_content h1{
@@ -796,7 +796,7 @@ h1{
     width: 200px;
   }
   .bushiness_images img{
-    width: 90%;
+    width: 100%;
   }
   .help{
     grid-template-columns: repeat(2,1fr);
@@ -882,6 +882,7 @@ h1{
   .bushiness_group{
     flex-direction: column;
   }
+ 
   
 }
 @media screen and (min-width:320px) {
