@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open onhtml3.html",
-            "file": "d:\\onhtml3\\onhtml3.html"
+            "file": "d:\\onhtml3\\services.html"
         }
     ]
 }
