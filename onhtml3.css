@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins'
 }
 
 .header{
@@ -13,12 +14,25 @@
   align-items: center;
   justify-content: space-around;
 }
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%)  ;
+  top: 0;
+  box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+  left: 0;
+  z-index: -1;
+}
+
 .logo{
   color: #063255;
 }
 .nav_list{
   list-style-type: none;
   display: flex;
+  font-size: 16px;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -47,6 +61,8 @@
 }
 .home_content{
   margin-left: 11rem;
+  display: grid;
+  grid-template-columns: 500px;
 }
 .nav_link_button{
   text-decoration: none;
@@ -57,22 +73,26 @@
 }
 .home_content h1{
   color: #1D3444;
-  font-size: 3rem;
+  font-size: 64px;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 .home_content p{
-  font-size: 1.4rem;
+  font-size: 18px;
   color: #5B5B5B;
+  font-weight: 500;
   margin-bottom: 1.75rem;
 }
 .services{
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 16px;
+  font-weight: 600;
 }
 .button_services{
   color: white;
-  font-size: 1.2rem;
+  font-size: 17px;
   padding: .75rem 1rem;
   border-radius: 20px;
   background-color: #F58A07;
@@ -94,14 +114,16 @@
 }
 .help_content h1{
   margin-bottom: 2rem;
+  font-size: 48px;
 }
 .help_content p{
   color: #5B5B5B;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: 500;
 }
 .help_content{
   display: grid;
-  grid-template-columns: 500px;
+  grid-template-columns: 600px;
   margin-bottom: 3rem;
 }
 .help{
@@ -115,9 +137,10 @@
 .help_group h1{
   margin-bottom: 1rem;
   color: black;
+  font-size: 24px;
 }
 .help_group {
-  font-size: 1.3rem;
+  font-size: 16px;
   color: #5B5B5B;
 }
 .learn_more_group{
@@ -139,16 +162,16 @@
 }
 .building_content{
   display: grid;
-  grid-template-columns: repeat(2,500px);
+  grid-template-columns: repeat(2,520px);
   gap: 7rem;
   align-items: center;
 }
 .building_content h1{
-  font-size: 2.2rem;
+  font-size: 36px;
 }
 .building_content p{
   color: #5B5B5B;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
 }
 .building{
@@ -159,13 +182,14 @@
 }
 .building_group{
   width: 401px;
-  height: 277px;
+  height: 277px;  
   border-radius: 20px;
   background-color: white;
 }
 .building_content_group{
   margin-top: 3rem;
   margin-left: 2rem;
+  margin-right: 2.9rem;
 }
 .building_content_group img{
   margin-bottom: 1.5rem;
@@ -175,7 +199,10 @@
 }
 .building_content_group p{
   color: #5B5B5B;
-  font-size: 1.3rem;
+  
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .energy_group{
   display: flex;
@@ -187,20 +214,23 @@
 }
 .energy_content h1{
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 48px;
   margin-bottom: 2rem;
 }
 .energy_content p{
   color: #5B5B5B;
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 .energy_mini{
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
 }
+.energy_number p{
+  font-size: 16px;
+}
 .energy_mini span{
-  font-size: 2rem;
+  font-size: 16px;
   color: #F58A07;
   font-weight: 700;
 }
@@ -254,11 +284,11 @@
   row-gap: 2rem;
 }
 .bushiness_content h1{
-  font-size: 3rem;
+  font-size: 48px;
 }
 .bushiness_content p{
   color: #5B5B5B;
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 .learn_more_group p{
   color: #F58A07 !important;
@@ -274,11 +304,11 @@
 .job_content{
   align-items: center;
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 500px;
 }
 .job_content h1{
   color: white;
-  font-size: 2rem;
+  font-size: 48px;
   margin-bottom: 2rem;
 }
 .job_butten{
@@ -309,10 +339,10 @@
   row-gap: 2rem;
 }
 .finsweet_content h1{
-  font-size: 3rem;
+  font-size: 48px;
 }
 .finsweet_content p{
-  font-size: 1.5rem;
+  font-size: 16px;
   color: #5B5B5B;
 }
 .description{
@@ -359,11 +389,14 @@
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
+}
+.blog_images h1{
+  font-size: 24px;
 }
 .blog_images p{
   color: #5B5B5B;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 .footer{
   background-color: #063255;
@@ -520,9 +553,15 @@
 }
 .building{
   gap: .3rem;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+}
+.building_group{
+  width: 60%;
 }
 .building_content_group{
-  width: 110px;
+  width: 300px;
 }
 .bushiness_group p{
   font-size: 15px;
@@ -634,6 +673,9 @@ h1{
 .bushiness_group_big{
   grid-template-columns: repeat(2,1fr);
 }
+.help_content{
+  grid-template-columns: none;
+}
 }
 
 
@@ -646,8 +688,11 @@ h1{
 @media (min-width: 787px) and (max-width: 1291px){
   .home_container
   {
-  display: grid ;
+  display: flex ;
+  flex-direction: row-reverse;
+
   }
+  
   .energy_content h1{
     font-size: 2rem;
   }
@@ -788,5 +833,64 @@ h1{
   }
   .energy_content h1{
     font-size: 2rem;
+  }
+}
+@media (min-width:350px) and (max-width:600px){
+  h1{
+    font-size: 1.5rem !important;
+  }
+  h2{
+    font-size: 1.3rem !important;
+  }
+  .job{
+    gap: .75rem;
+  }
+  .finsweet_img img{
+    width: 100%;
+  }
+  .finsweet_content{
+    grid-template-columns: none;
+  }
+  .home_content{
+    grid-template-columns: none;
+  }
+  .home_content h1{
+    font-size: 1.5rem;
+  }
+  .home_content p{
+    font-size: 1rem;
+  }
+  .home_image{
+    width: 100%;
+    height: 90%;
+  }
+  .help_content h1{
+    font-size: 1.5rem;
+  }
+  .home_content p{
+    font-size: 1rem;
+  }
+  .building_content h1{
+    font-size: 1.5rem;
+  }
+  .building_content_group{
+    width: 160px;
+  }
+  .job_images img{
+    width: 90%;
+  }
+  .bushiness_group{
+    flex-direction: column;
+  }
+  
+}
+@media screen and (min-width:320px) {
+   .building,.home_container{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .help_group{
+    padding-bottom: 1.3rem;
   }
 }

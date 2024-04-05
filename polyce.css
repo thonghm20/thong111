@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
+
   
   .header{
     width: 100%;
@@ -128,3 +130,16 @@
     display: flex;
     gap: 1rem;
   }
+  @media screen and (max-width:786px) {
+    
+    .privacy{
+      padding: 8rem 0 4rem 0;
+      text-align: center;
+    }
+   }
+   @media (min-width: 787px) and (max-width: 1291px){
+    .privacy{
+      padding: 8rem 3rem 4rem 3rem;
+      text-align: left;
+    } 
+   }

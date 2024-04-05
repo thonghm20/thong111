@@ -12,3 +12,13 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
+
+const blurHeder = () =>{ 
+    const Heder = document.getElementById('header') 
+    this.scrollY >= 50 ? Heder.classList.add('blur-header')
+                       : Heder.classList.remove('blur-header')
+    }
+    window.addEventListener('scroll',blurHeder)
+
+   
+   

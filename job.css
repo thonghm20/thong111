@@ -187,6 +187,59 @@ input , textarea{
   gap: 1rem;
 }
 
-
-
-
+@media screen and (max-width:786px) {
+ .testing{
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+ }
+ .details{
+  padding: 2rem 0 2rem 0;
+  
+ }
+ .detais_group{
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+ }
+ .job_description{
+  grid-template-columns: none;
+ }
+ .testing_group{
+  display: grid;
+  gap: 2rem;
+ }
+ .form_apply{
+  padding: 3rem 0 2rem 0;
+ }
+ .form_button{
+  width: 100%;
+ }
+}
+@media (min-width: 787px) and (max-width: 1291px){
+  .testing{
+    padding: 5rem 0 2rem 0;
+    text-align: center;
+   }
+   .details{
+    padding: 2rem 0 2rem 0;
+    
+   }
+   .detais_group{
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+   }
+   .job_description{
+    grid-template-columns: none;
+   }
+   .testing_group{
+    display: grid;
+    gap: 2rem;
+   }
+   .form_apply{
+    padding: 3rem 0 2rem 0;
+   }
+   .form_button{
+    width: 100%;
+   }
+}

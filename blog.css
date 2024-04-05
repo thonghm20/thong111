@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
 }
 .header{
     width: 100%;
@@ -11,6 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  .blur-header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%)  ;
+    top: 0;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    left: 0;
+    z-index: -1;
   }
   .logo{
     color: #063255;
@@ -85,16 +97,16 @@
   }
   .blog_content{
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: 500px;
   }
   .blog_content h1{
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 64px;
     margin-bottom: 1.5rem;
   }
   .blog_content p{
     color: #5B5B5B;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
   .learn_more_group{
     margin-top: 2rem;
@@ -111,12 +123,22 @@
     color: #F58A07 !important;
   }
   .all_post{
-    padding-left: 11rem;
+    padding-left: 6rem;
     padding-top: 7rem;
     padding-bottom: 3rem;
     padding-right: 7rem;
   }
-  .all_post_group{
+  .all_post h1{
+    font-size: 48px;
+  }
+  .blog_images h1{
+    font-size: 24px;
+  }
+  .blog_images p{
+    font-size: 16px;
+  }
+  .all_post_group
+  {
     display: grid;
     margin-top: 3rem;
     grid-template-columns: repeat(3,1fr);
@@ -228,6 +250,7 @@
     flex-direction: column;
     padding: 1rem 0 2rem 0;
     gap: 1rem;
+    justify-content: center;
     text-align: center;
   }
   .all_post{
@@ -257,6 +280,9 @@
     display: flex;
     gap: 1rem;
   }
+  .blog_content{
+    grid-template-columns: none;
+  }
   .blog_img{
     width: 100%;
   }
@@ -279,7 +305,8 @@
       justify-self: center;
     }
     .blog_container{
-       padding: 4rem; 
+       padding: 4rem;
+       gap: 2rem;
     }
     .all_post_group{
       grid-template-columns: repeat(2,1fr);
@@ -303,6 +330,14 @@
       padding: 2rem 0 0 0;
       justify-content: center;
     }
+    .blog_container{
+      display: grid;
+      text-align: center;
+    }
+    .blog_content{
+      grid-template-columns: none;
+
+    }
    
   }
   @media screen and (max-width:1390px) {
@@ -313,5 +348,13 @@
   @media screen and (min-width:1292px) and (max-width:1395px) {
     .footer_content{
       grid-template-columns: repeat(4,1fr);
+    }
+  }
+  @media (min-width:350px) and (max-width:600px){
+    h1{
+      font-size: 1.5rem !important;
+    }
+    h2{
+      font-size: 1.3rem !important;
     }
   }
