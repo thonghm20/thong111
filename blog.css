@@ -360,4 +360,18 @@
     .all_post_group{
      display: grid;
     }
+    .blog_description 
+    {
+      text-align: center;
+    }
+    .blog_images{
+      border-radius: 1px;
+    }
+    .blog_images{
+      text-align: center;
+    }
+    .blog_images h1{
+      padding: 1rem 1rem 0 0;
+      font-size: 1.3rem;
+    }
   }
