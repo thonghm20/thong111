@@ -265,7 +265,7 @@
       top: 0;
       right: -100%;
       height: 100%;
-      background-color: transparent;
+      background-color: rgba(0,0,0,0.65);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       width: 80%;
@@ -279,9 +279,13 @@
     row-gap: 3rem;
     
   }
+  .nav_link{
+    color: white;
+  }
   .nav_close{
     position: absolute;
     top: 1.15rem;
+    color: white;
     right: 1.5rem;
     font-size: 1.25rem;
   }
@@ -624,6 +628,11 @@
 @media (min-width:350px) and (max-width:600px) {
   h1{
     font-size: 1.5rem !important;
+  }
+  .Blogg{
+    text-align: center;
+  }
+  .list_ul{
   }
   h2{
     font-size: 1.3rem !important;

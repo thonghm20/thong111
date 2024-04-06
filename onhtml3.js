@@ -12,6 +12,14 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnToggle = navToggle.contains(event.target);
+    
+    if (!isClickInsideMenu && !isClickOnToggle) {
+        navMenu.classList.remove('show-menu');
+    }
+});
 
 const blurHeder = () =>{ 
     const Heder = document.getElementById('header') 

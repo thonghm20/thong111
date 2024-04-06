@@ -223,7 +223,7 @@
       top: 0;
       right: -100%;
       height: 100%;
-      background-color: transparent;
+      background-color: rgba(0,0,0,0.65);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       width: 80%;
@@ -237,9 +237,13 @@
     row-gap: 3rem;
     
   }
+  .nav_link{
+    color: white;
+  }
   .nav_close{
     position: absolute;
     top: 1.15rem;
+    color: white;
     right: 1.5rem;
     font-size: 1.25rem;
   }
@@ -362,15 +366,20 @@
     }
     .blog_description 
     {
+      padding: 1rem 0 1rem 0;
       text-align: center;
     }
     .blog_images{
       border-radius: 1px;
     }
-    .blog_images{
+    .all_post h1{
       text-align: center;
     }
+    .asd{
+      margin-top: 3.5rem;
+    }
     .blog_images h1{
+      text-align: center;
       padding: 1rem 1rem 0 0;
       font-size: 1.3rem;
     }
